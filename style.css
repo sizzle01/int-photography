@@ -11,6 +11,7 @@
     --ff-secondary: 'Source Code Pro', monospace;
     --fw-reg: 300;
     --fw-bold: 900;
+    --clr-light1: #FFFFFF;
     --clr-light: #E5E5E5;
     --clr-dark: #303030;
     --clr-accent1: #5DF199;
@@ -29,6 +30,10 @@
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
+}
+
+img {
+    display: block;
 }
 
 body {
@@ -52,7 +57,7 @@ label.logo {
     padding: 13px;
     font-weight: bold;
     background: var(--clr-accent1);
-    margin: 0 0 0 3.25em;
+    margin: 0 0 0 3em;
 }
 
 nav ul {
@@ -80,7 +85,7 @@ a:hover {
 
 .checkbtn {
     font-size: 30px;
-    color: white;
+    color: var(--clr-accent1);
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -95,7 +100,7 @@ a:hover {
 /*NAV MEDIA QUERIES*/
 
 @media (max-width: 952px) {
-    label.logo {
+    .logo {
         font-size: 30px;
         padding-left: 50px;
     }
@@ -134,6 +139,13 @@ a:hover {
     #check:checked~ul {
         left: 0;
     }
+    label.logo {
+        color: #212429;
+        font-size: 30px;
+        background: var(--clr-accent1);
+        margin: 0 0 0 1.7rem;
+        padding: 9px;
+    }
 }
 
 
@@ -143,9 +155,145 @@ a:hover {
 /*HERO STYLE BEGINNING*/
 
 .hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     height: calc(100vh - 80px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)) url(./images/herobg.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/herobg.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+}
+
+.hero-cont {
+    color: var(--clr-light1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-cont img {
+    border: 0.5em solid #FFFFFF;
+    border-radius: 50%;
+    width: 17.9rem;
+    margin-bottom: 1.5em;
+}
+
+.hero-cont h1 {
+    width: 22.4rem;
+    font-size: 3rem;
+    font-size: 600;
+    margin-bottom: 0.1rem;
+}
+
+.hero-cont p {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.contact-btn {
+    width: 14.1rem;
+    height: 3.4rem;
+    background: none;
+    font-size: 1.75rem;
+    color: var(--clr-light1);
+    border: 2px solid var(--clr-accent1);
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 76%;
+    }
+    .hero-pic {
+        width: 15.9rem;
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: 65%;
+    }
+    .hero-pic {
+        width: 12.9rem;
+    }
+    .contact-btn {
+        width: 10.1rem;
+        height: 2.8rem;
+        background: none;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+    .hero-pic {
+        width: 11.9rem;
+    }
 }
 
 
-/*HERO STYLE END*/
+/*HERO STYLE ENDS*/
+
+
+/*GALLERY STYLE BEGINGS*/
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    width: 12.4rem;
+}
+
+.gallery-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-accent2);
+    margin: 2.5rem 0;
+}
+
+.gallery-cont ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.gallery-cont ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.gallery-cont ul li {
+    padding: 0 1.7rem;
+    font-size: 1.75rem;
+}
+
+.row1 {
+    width: 100%;
+}
+
+.row1 img {
+    width: 100%;
+    padding: 0.3rem;
+}
+
+
+/*GALLERY STYLE ENDS*/
