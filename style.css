@@ -288,12 +288,101 @@ a:hover {
 
 .row1 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .row1 img {
-    width: 100%;
+    width: 400px;
+    height: 400PX;
     padding: 0.3rem;
 }
 
 
 /*GALLERY STYLE ENDS*/
+
+
+/*PRICING STYLE BEGINS*/
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pricing h1 {
+    font-size: 2.6rem;
+    width: 12.4rem;
+}
+
+.pricing-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-accent2);
+    margin: 2.5rem 0;
+}
+
+.pricing-cont {
+    display: flex;
+    height: 75vh;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: var(--clr-light1);
+    width: 18.4rem;
+    padding: 0.3rem 0.3rem 2rem 0.3rem;
+    border-radius: 3%;
+    display: flex;
+    margin: 0 0.8rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-card img {
+    width: 100%;
+}
+
+.pricing-card h2 {
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 41px;
+    margin: 1rem;
+    color: #5DF199;
+}
+
+.pricing-card h3 {
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #212429;
+}
+
+.pricing-card i {
+    width: 167px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 29px;
+    border-bottom: 1px solid #212429;
+    color: #212429;
+    padding-bottom: 0.5rem;
+}
+
+.pricingbtn {
+    background: none;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: 2px solid var(--clr-accent1);
+}
+
+
+/*PRICING STYLE ENDS*/
