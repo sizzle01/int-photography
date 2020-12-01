@@ -53,11 +53,10 @@ nav {
 label.logo {
     color: #212429;
     font-size: 35px;
-    line-height: 80px;
-    padding: 13px;
+    padding: 0px 10px;
     font-weight: bold;
     background: var(--clr-accent1);
-    margin: 0 0 0 3em;
+    margin: 0.3rem 0 0 3rem;
 }
 
 nav ul {
@@ -330,17 +329,17 @@ a:hover {
 
 .pricing-cont {
     display: flex;
-    height: 75vh;
+    height: auto;
     flex-wrap: wrap;
 }
 
 .pricing-card {
     background: var(--clr-light1);
-    width: 18.4rem;
-    padding: 0.3rem 0.3rem 2rem 0.3rem;
+    width: 22.4rem;
+    padding: 0.2rem 0.2rem 2rem 0.2rem;
     border-radius: 3%;
     display: flex;
-    margin: 0 0.8rem;
+    margin: 1rem 0.8rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -386,3 +385,102 @@ a:hover {
 
 
 /*PRICING STYLE ENDS*/
+
+
+/*  ***************************** Testimonial Section Start *************/
+
+.testimonials {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) url(./images/testbg.png);
+    background-color: #000000;
+    float: left;
+    width: 100%;
+    padding: 100px 15px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.testimonials .title {
+    margin-bottom: 60px
+}
+
+.testimonials .title h1 {
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0;
+}
+
+.testimonials .slider {
+    border: 1px solid #333333;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.testimonials .slider .slide {
+    display: none;
+}
+
+.testimonials .slider .slide.active {
+    display: block;
+    animation: slide 1s ease;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.testimonials .slider p {
+    font-size: 18px;
+    color: #ffffff;
+    word-spacing: 2px;
+}
+
+.testimonials .slider .client-info h3 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    margin: 30px 0 10px;
+}
+
+.testimonials .slider .client-info span {
+    display: block;
+    font-size: 16px;
+    color: #11bead;
+}
+
+.testimonials .slider-indicator {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.testimonials .slider-indicator img {
+    max-height: 80px;
+    max-width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px;
+    opacity: 0.2;
+    border: 4px solid #fff;
+    cursor: pointer;
+    transition: opacity 1s ease;
+}
+
+.testimonials .slider-indicator img.active {
+    opacity: 1;
+}
+
+
+/*  ***************************** Testimonial Section End *************/
