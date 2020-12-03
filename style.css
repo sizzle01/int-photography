@@ -484,3 +484,41 @@ a:hover {
 
 
 /*  ***************************** Testimonial Section End *************/
+
+
+/*  *********************CONTACT Section BEGINS*************/
+
+.contact {
+    height: 80vh;
+    background-color: var(--clr-accent2);
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.contact-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.address-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--clr-accent1);
+    width: 20rem;
+    height: 15rem;
+    font-size: 0.9rem;
+}
+
+.location {
+    padding: 1rem 0;
+}
+
+.address-info {
+    margin-left: 1.5rem;
+}
+
+
+/*  *********************CONTACT Section Ends*************/
